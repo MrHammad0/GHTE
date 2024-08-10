@@ -266,7 +266,8 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to left, var(--green-color), var(--white-color));
+    /* background-image: linear-gradient(to left, var(--green-color), var(--white-color)); */
+    background-color: var(--green-color);
     z-index: -1;
     transform: scale(0);
     transition: all ease .5s
@@ -579,9 +580,19 @@ textarea.form-control {
 
 .single-marketing-box {
     padding: 24px;
-    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .06);
     margin-bottom: 30px;
-    position: relative
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .2s ease-in-out;
+}
+
+.single-marketing-box:hover {
+    scale: 1.1;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border-radius: 4px;
 }
 
 .single-marketing-box::before {
@@ -589,15 +600,35 @@ textarea.form-control {
     position: absolute;
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid #f68820;
+    border-bottom: 2px solid var(--orange-color);
     width: 0;
     height: 2px;
-    transition: all ease .5s
+    transition: all ease .5s;
+}
+
+.marketing-area .section-title span {
+    color: var(--orange-color);
+}
+
+.marketing-area .section-title h2 {
+    color: var(--green-color);
+}
+
+.marketing-pra {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 .single-marketing-box h3 {
     font-size: 24px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    color: var(--green-color);
+}
+
+.single-marketing-box:hover h3 {
+    color: var(--orange-color);
 }
 
 .single-marketing-box img {
@@ -607,7 +638,7 @@ textarea.form-control {
 .single-marketing-box:hover::before {
     width: 100%;
     left: 0;
-    right: auto
+    right: auto;
 }
 
 .single-marketing-box.icon-style img {
@@ -615,7 +646,7 @@ textarea.form-control {
     margin-bottom: 20px
 }
 
-.website-content {
+/* .website-content {
     margin-bottom: 30px;
     margin-top: -13px
 }
@@ -686,7 +717,7 @@ textarea.form-control {
     background-image: linear-gradient(to right, #ffa203, #ff5e29);
     z-index: -1;
     animation: border-transform 10s linear infinite alternate forwards
-}
+} */
 
 .experience-content {
     margin-top: -5px
@@ -1921,6 +1952,9 @@ textarea.form-control {
     color: #fff
 }
 
+
+/* About  */
+
 .about-img {
     position: relative;
     z-index: 1;
@@ -1948,7 +1982,7 @@ textarea.form-control {
 
 .about-img .video-button a i {
     font-size: 70px;
-    background-image: linear-gradient(to right, rgba(255, 162, 3, 0.9), rgba(255, 94, 41, 0.9));
+    background-image: linear-gradient(to right, var(--orange-color), var(--green-color));
     width: 150px;
     height: 150px;
     line-height: 150px;
@@ -1981,7 +2015,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
+    background-image: linear-gradient(to right, var(--orange-color), var(--green-color));
     z-index: -1;
     animation: border-transform 10s linear infinite alternate forwards
 }
@@ -2002,7 +2036,8 @@ textarea.form-control {
 
 .about-content h2 {
     font-size: 40px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    color: var(--green-color);
 }
 
 .about-content h3 {
@@ -2018,12 +2053,16 @@ textarea.form-control {
 }
 
 .about-content ul li {
-    margin-bottom: 20px;
     font-family: "Barlow", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     position: relative;
-    padding-left: 30px
+    padding-left: 25px
+}
+
+.values {
+    list-style: disc !important;
+    padding-left: 10px !important;
 }
 
 .about-content ul li:last-child {
@@ -2035,7 +2074,7 @@ textarea.form-control {
     width: 20px;
     height: 20px;
     line-height: 20px;
-    background-color: #f68820;
+    background-color: var(--orange-color);
     border-radius: 50%;
     text-align: center;
     font-size: 18px;
@@ -2054,9 +2093,11 @@ textarea.form-control {
     margin-top: 5px
 }
 
+/* counter  */
+
 .counter-bg {
-    background-color: #fff8f0;
-    border-radius: 0 30px 0 30px
+    background-color: var(--orange-color);
+    border-radius: 0 40px 0 40px
 }
 
 .single-counter {
@@ -2071,11 +2112,12 @@ textarea.form-control {
 
 .single-counter .count-title h2 {
     font-size: 48px;
-    color: #fff;
+    color: var(--green-color);
     margin-bottom: 0;
     line-height: 1;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
+    /* background-image: linear-gradient(to right, var(--black-color), var(--green-color)); */
+    background-color: var(--white-color);
     display: inline-block;
     width: 120px;
     height: 120px;
@@ -2088,13 +2130,13 @@ textarea.form-control {
     top: 2px;
     margin-left: -10px;
     font-size: 48px;
-    color: #fff
+    color: var(--green-color)
 }
 
 .single-counter .count-title h4 {
     font-size: 24px;
     margin-bottom: 0;
-    color: #30296c;
+    color: var(--white-color);
     font-weight: 600
 }
 
@@ -2109,40 +2151,28 @@ textarea.form-control {
     top: 32px
 }
 
+
+/* why choose us  */
 .why-choose-us-img {
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
-    text-align: center
+    text-align: center;
+
 }
 
-.why-choose-us-img .why-choose-us-shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1
+.why-choose-us-img img {
+    border-radius: 0 60px 0 60px
 }
 
-.why-choose-us-img.before-style::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
-    z-index: -1;
-    animation: border-transform 10s linear infinite alternate forwards
-}
 
 .why-choose-us-content {
     margin-bottom: 30px
 }
 
 .why-choose-us-content span {
-    font-size: 16px;
-    color: #f68820;
+    font-size: 18px;
+    color: var(--orange-color);
     display: block;
     margin-bottom: 5px;
     font-weight: 700
@@ -2151,20 +2181,22 @@ textarea.form-control {
 .why-choose-us-content h2 {
     font-size: 46px;
     margin-bottom: 20px;
-    position: relative
+    position: relative;
+    color: var(--green-color);
 }
 
 .why-choose-us-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: 30px
+    margin-top: 20px
 }
 
 .why-choose-us-content ul li {
     position: relative;
     padding-left: 40px;
-    margin-bottom: 30px
+    display: flex;
+    align-items: center;
 }
 
 .why-choose-us-content ul li:last-child {
@@ -2179,8 +2211,8 @@ textarea.form-control {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background-color: #f68820;
-    color: #fff;
+    background-color: var(--orange-color);
+    color: var(--white-color);
     border-radius: 50%;
     font-size: 18px
 }
@@ -2189,9 +2221,9 @@ textarea.form-control {
     font-size: 24px
 }
 
-.why-choose-us-content ul li p {
+/* .why-choose-us-content ul li p {
     margin-bottom: 0
-}
+} */
 
 .single-team-member {
     transition: all ease .5s;
@@ -2333,6 +2365,7 @@ textarea.form-control {
 
 .hero-slider-area {
     position: relative;
+    background-image: url(../images/slider/slider-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
@@ -2361,7 +2394,7 @@ textarea.form-control {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #30296c;
+    color: var(--white-color);
     transition: all ease .5s;
     cursor: pointer;
     position: relative;
@@ -2376,7 +2409,7 @@ textarea.form-control {
     left: 23px;
     width: 70px;
     height: 1px;
-    background-color: #30296c;
+    background-color: var(--orange-color);
     transition: all ease .5s;
     opacity: 0
 }
@@ -2390,19 +2423,19 @@ textarea.form-control {
 }
 
 .hero-slider-area .thumbs-wrap .owl-thumbs .owl-thumb-item.active span {
-    color: #f68820
+    color: var(--orange-color);
 }
 
 .hero-slider-area .thumbs-wrap .owl-thumbs .owl-thumb-item.active span::before {
-    background-color: #f68820
+    background-color: var(--orange-color);
 }
 
 .hero-slider-area .thumbs-wrap .owl-thumbs .owl-thumb-item:hover span {
-    color: #f68820
+    color: var(--orange-color);
 }
 
 .hero-slider-area .thumbs-wrap .owl-thumbs .owl-thumb-item:hover span::before {
-    background-color: #f68820
+    background-color: var(--orange-color);
 }
 
 .hero-slider-area .thumbs-wrap .owl-thumbs .owl-thumb-item:last-child.active {
@@ -2447,13 +2480,15 @@ textarea.form-control {
 
 .hero-slider-content h1 {
     font-size: 70px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    color: var(--white-color);
 }
 
 .hero-slider-content p {
     margin-bottom: 30px;
     max-width: 600px;
-    font-size: 18px
+    font-size: 18px;
+    color: var(--white-color);
 }
 
 .hero-slider-content .slider-btn .play-video {
@@ -2464,11 +2499,17 @@ textarea.form-control {
 
 .hero-slider-content .slider-btn .play-video i {
     font-size: 56px;
-    color: #f68820
+    color: var(--white-color);
+    transition: .3s ease-in-out;
+}
+
+
+.hero-slider-content .slider-btn .play-video i:hover {
+    color: var(--orange-color);
 }
 
 .hero-slider-content .slider-btn .play-video span {
-    color: #30296c;
+    color: var(--white-color);
     font-weight: 600;
     font-size: 16px;
     position: relative;
@@ -2478,7 +2519,7 @@ textarea.form-control {
 }
 
 .hero-slider-content .slider-btn .play-video:hover span {
-    color: #f68820
+    color: var(--orange-color);
 }
 
 .slider-img {
@@ -2504,7 +2545,7 @@ textarea.form-control {
     bottom: 0;
     width: 100%;
     height: 50%;
-    background-color: #fff;
+    background-color: var(--white-color);
     z-index: -1
 }
 
@@ -2528,7 +2569,7 @@ textarea.form-control {
 .video-content .video-button i {
     font-size: 100px;
     color: #fff;
-    background-color: rgba(246, 136, 32, .9);
+    background-color: var(--orange-color);
     line-height: 1;
     border-radius: 50%;
     width: 100px;
@@ -2539,10 +2580,10 @@ textarea.form-control {
 
 .video-content .video-button i:hover {
     background-color: rgba(255, 255, 255, .9);
-    color: #f68820
+    color: var(--orange-color);
 }
 
-.faq-accordion {
+/* .faq-accordion {
     max-width: 930px;
     margin: auto;
     position: relative;
@@ -2620,7 +2661,7 @@ textarea.form-control {
 
 .faq-accordion .accordion .accordion-content.show {
     display: block
-}
+} */
 
 .page-title-area {
     padding-top: 100px;
