@@ -13,6 +13,7 @@ body {
     --green-color: #01AE47;
     --black-color: #000000;
     --white-color: #FFFFFF;
+    --dark-color: #696687;
 }
 
 /*** Button ***/
@@ -653,7 +654,7 @@ textarea.form-control {
 
 
 /*** Service ***/
-.service-item {
+/* .service-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -693,9 +694,93 @@ textarea.form-control {
 
 .services-data {
     padding: 40px 20px;
-    /* background-image: linear-gradient(to left, var(--green-color), var(--white-color)); */
+    background-image: linear-gradient(to left, var(--green-color), var(--white-color));
+} */
+
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    /* Stacks items vertically */
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    border-radius: 10px !important;
+    box-shadow: 5px 5px 15px #DDDDDD;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    background-image: linear-gradient(to left, var(--green-color), var(--white-color));
+    padding: 20px;
+    margin: 10px 0;
+
+    /* Add padding for spacing */
 }
 
+.service-item:hover .service-icon {
+    scale: 1.1;
+}
+
+.service-item:nth-child(2) {
+    background-image: linear-gradient(to right, var(--green-color), var(--white-color));
+}
+
+.service-item .service-icon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: var(--green-color) !important;
+    height: 200px;
+    /* Reduced height for smaller screens */
+    width: 240px;
+    /* Reduced width for smaller screens */
+    transform: rotate(90deg);
+    margin-bottom: 20px;
+    transition: all .3s ease-in-out !important;
+    /* Adds space between icon and text */
+}
+
+.service-item .service-icon img {
+    /* height: ; */
+    width: 80%;
+    transform: rotate(270deg);
+    object-fit: contain;
+}
+
+.services-data {
+    padding: 20px;
+    text-align: center;
+    /* Center text for better readability */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .service-item {
+        flex-direction: row;
+        /* Switch to horizontal layout on medium screens */
+        padding: 30px;
+    }
+
+    .service-item .service-icon {
+        height: 300px;
+        width: 360px;
+        margin-bottom: 0;
+        /* Remove margin when icons and text are side by side */
+        margin-right: 20px;
+        /* Adds space between icon and text */
+    }
+
+    .services-data {
+        text-align: left;
+        /* Align text to the left */
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .service-item .service-icon {
+        height: 350px;
+        width: 420px;
+    }
+}
 
 
 
@@ -1677,6 +1762,8 @@ textarea.form-control {
     padding: 30px
 }
 
+
+/* footer section  */
 .single-footer-widget {
     margin-bottom: 30px
 }
@@ -1687,7 +1774,8 @@ textarea.form-control {
 }
 
 .single-footer-widget p {
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    color: var(--white-color);
 }
 
 .single-footer-widget .social-icon {
@@ -1713,13 +1801,13 @@ textarea.form-control {
     text-align: center;
     transition: all ease .5s;
     display: inline-block;
-    background-color: #f68820;
+    background-color: var(--green-color);
     color: #fff;
     border-radius: 4px
 }
 
 .single-footer-widget .social-icon li a:hover i {
-    transform: translateY(-2px)
+    transform: translateY(-10px)
 }
 
 .single-footer-widget h3 {
@@ -1732,7 +1820,10 @@ textarea.form-control {
 .single-footer-widget .address {
     padding: 0;
     margin: 0;
-    list-style-type: none
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
 }
 
 .single-footer-widget .address li {
@@ -1744,7 +1835,7 @@ textarea.form-control {
 
 .single-footer-widget .address li i {
     position: absolute;
-    color: #f68820;
+    color: var(--green-color);
     left: 0;
     top: 0;
     font-size: 15px;
@@ -1754,17 +1845,18 @@ textarea.form-control {
     text-align: center;
     transition: all ease .5s;
     display: inline-block;
-    background-color: #f68820;
+    background-color: var(--green-color);
     color: #fff;
     border-radius: 4px
 }
 
 .single-footer-widget .address li a {
-    display: block
+    display: block;
+    font-weight: 800;
 }
 
 .single-footer-widget .address li a:hover {
-    color: #f68820
+    color: var(--green-color)
 }
 
 .single-footer-widget .address li:last-child {
@@ -1774,23 +1866,26 @@ textarea.form-control {
 .single-footer-widget .import-link {
     padding: 0;
     margin: 0;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .single-footer-widget .import-link li {
-    margin-bottom: 16px
+    margin-bottom: 5px;
 }
 
-.single-footer-widget .import-link li:last-child {
-    margin-bottom: 0
+.single-footer-widget .import-link li a {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
 }
+
 
 .single-footer-widget .import-link li:hover::before {
     border-radius: 50%
 }
 
 .single-footer-widget .import-link li:hover a {
-    color: #f68820
+    color: var(--green-color)
 }
 
 .single-footer-widget .newsletter-form {
@@ -1798,7 +1893,7 @@ textarea.form-control {
 }
 
 .single-footer-widget .newsletter-form p {
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .single-footer-widget .newsletter-form .form-control {
@@ -1806,7 +1901,7 @@ textarea.form-control {
 }
 
 .single-footer-widget .newsletter-form .form-control::placeholder {
-    color: #696687
+    color: var(--green-color)
 }
 
 .single-footer-widget .newsletter-form .send-btn {
@@ -1817,7 +1912,7 @@ textarea.form-control {
     height: 55px;
     line-height: 55px;
     text-align: center;
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
+    background-color: var(--green-color);
     color: #fff;
     font-size: 25px
 }
@@ -5093,15 +5188,16 @@ textarea.form-control {
     cursor: pointer;
     right: 3%;
     top: 87%;
-    background-color: #f68820;
+    background-color: var(--green-color);
     z-index: 4;
-    width: 40px;
+    width: 60px;
+    height: 62px;
     text-align: center;
-    height: 42px;
     line-height: 42px;
     transform: scale(0);
     visibility: hidden;
-    transition: .9s
+    transition: .9s;
+    border-radius: 50%;
 }
 
 .go-top i {
@@ -5130,15 +5226,16 @@ textarea.form-control {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: #f68820;
+    background-color: var(--green-color);
     opacity: 0;
     visibility: hidden;
-    transition: .5s
+    transition: .5s;
+    border-radius: 50%;
 }
 
 .go-top:hover {
     color: #fff;
-    background-color: #f68820
+    background-color: var(--orange-color)
 }
 
 .go-top:hover::before {
@@ -5195,7 +5292,7 @@ textarea.form-control {
     line-height: 70px;
     text-align: center;
     border-radius: 0;
-    color: #f68820;
+    color: var(--orange-color);
     position: relative;
     top: 3px;
     z-index: 1;
