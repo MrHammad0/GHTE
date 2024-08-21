@@ -594,6 +594,7 @@ textarea.form-control {
     cursor: pointer;
     border-radius: 2px;
     transition: .2s ease-in-out;
+    min-height: 22rem !important;
 }
 
 .single-marketing-box:hover {
@@ -655,50 +656,6 @@ textarea.form-control {
 }
 
 
-
-/*** Service ***/
-/* .service-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .5s ease-in-out;
-    border-radius: 10px !important;
-    box-shadow: 5px 5px 15px #DDDDDD;
-    cursor: pointer;
-    width: 90%;
-    margin: auto;
-    background-image: linear-gradient(to left, var(--green-color), var(--white-color));
-}
-
-.serviceslist {
-    padding: 0 !important;
-}
-
-.service-item .service-icon {
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: var(--green-color) !important;
-    height: 350px;
-    width: 420px;
-    transform: rotate(90deg);
-}
-
-.service-item .service-icon img {
-    height: auto;
-    width: 50%;
-}
-
-.service-title h5 {
-    color: var(--orange-color);
-}
-
-.service-title h1 {
-    color: var(--green-color);
-}
-
-.services-data {
-    padding: 40px 20px;
-    background-image: linear-gradient(to left, var(--green-color), var(--white-color));
-} */
 
 
 .service-item {
@@ -986,9 +943,20 @@ textarea.form-control {
     animation: border-transform 10s linear infinite alternate forwards
 }
 
+/* service secction  */
 .services-area {
     position: relative;
     z-index: 1
+}
+
+.services-area .section-title span {
+    color: var(--orange-color);
+    font-size: 18px;
+}
+
+.services-area .section-title h2 {
+    color: var(--green-color);
+    margin-bottom: 10rem;
 }
 
 .services-area .shape {
@@ -1019,41 +987,68 @@ textarea.form-control {
     transition: all ease .5s;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
     background-color: #fff;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, var(--green-color), var(--white-color));
+    min-height: 45rem !important;
 }
 
-.single-services img {
-    margin-bottom: 18px
+.single-services .service-img {
+    margin-bottom: 18px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: var(--green-color) !important;
+    height: 300px;
+    width: 340px;
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+    transition: all .3s ease-in-out !important;
 }
 
-.single-services h3 {
-    font-size: 24px;
-    margin-bottom: 15px
+.single-services .service-img img {
+    width: 80%;
+    transform: rotate(270deg);
+    object-fit: contain;
 }
 
-.single-services h3 a {
-    color: #30296c
+.single-services .service-content {
+    text-align: center;
 }
 
-.single-services p {
-    margin-bottom: 20px
+.single-services .service-content h4 {
+    color: var(--dark-color);
+    font-weight: 800;
 }
 
-.single-services .default-btn {
-    padding: 12px 25px;
-    border: 1px solid #f68820;
-    color: #30296c;
-    background-image: none
+.single-services .service-content h6 {
+    color: var(--white-color);
+    font-weight: 400;
 }
 
 .single-services:hover {
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
     background-color: #fff;
-    transform: translateY(-5px)
+    transform: translateY(-15px)
+}
+
+
+.single-services:hover .service-img {
+    scale: 1.1;
+}
+
+.single-services .default-btn {
+    padding: 12px 25px;
+    color: var(--dark-color);
+    background-image: none
 }
 
 .single-services:hover .default-btn {
-    color: #fff
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
 }
 
 .single-services:hover .default-btn::before {
@@ -1066,139 +1061,42 @@ textarea.form-control {
     margin-bottom: 30px
 }
 
-.single-services.box i {
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-    font-size: 50px;
-    transition: all ease .5s;
-    color: #f68820;
-    animation: border-transform 5s linear infinite alternate forwards;
-    text-align: center
+
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .service-item {
+        flex-direction: row;
+        /* Switch to horizontal layout on medium screens */
+        padding: 30px;
+    }
+
+    .service-item .service-icon {
+        height: 300px;
+        width: 360px;
+        margin-bottom: 0;
+        /* Remove margin when icons and text are side by side */
+        margin-right: 20px;
+        /* Adds space between icon and text */
+    }
+
+    .services-data {
+        text-align: left;
+        /* Align text to the left */
+        padding: 40px 20px;
+    }
 }
 
-.single-services.box i::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 120px;
-    height: 120px;
-    background-color: #fff8f0;
-    z-index: -1;
-    transition: all ease .5s;
-    animation: border-transform 10s linear infinite alternate forwards
+@media (min-width: 992px) {
+    .service-item .service-icon {
+        height: 350px;
+        width: 420px;
+    }
 }
 
-.single-services.box:hover i {
-    background-image: linear-gradient(to right, #fff8f0, #fff8f0);
-    color: #fff
-}
 
-.single-services.box:hover i::after {
-    background-image: linear-gradient(to right, #ffa203, #ff5e29)
-}
 
-.single-services.card-bg {
-    box-shadow: none
-}
 
-.single-services.card-bg .default-btn {
-    background-image: linear-gradient(to right, #ffa203, #ff5e29);
-    color: #fff;
-    padding: 20px 45px
-}
-
-.single-services-box-wrap {
-    position: relative;
-    overflow: hidden
-}
-
-.single-services-box-wrap .top-content {
-    position: relative;
-    top: 0;
-    transition: all ease .5s
-}
-
-.single-services-box-wrap .top-content p {
-    margin-bottom: 0
-}
-
-.single-services-box-wrap .bottom-content {
-    position: absolute !important;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: 46px 30px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    transition: all ease .5s
-}
-
-.single-services-box-wrap .bottom-content.bg-1 {
-    background-image: url(../images/services/services-card-bg-1.jpg)
-}
-
-.single-services-box-wrap .bottom-content.bg-2 {
-    background-image: url(../images/services/services-card-bg-2.jpg)
-}
-
-.single-services-box-wrap .bottom-content.bg-3 {
-    background-image: url(../images/services/services-card-bg-3.jpg)
-}
-
-.single-services-box-wrap .bottom-content.bg-4 {
-    background-image: url(../images/services/services-card-bg-4.jpg)
-}
-
-.single-services-box-wrap .bottom-content.bg-5 {
-    background-image: url(../images/services/services-card-bg-5.jpg)
-}
-
-.single-services-box-wrap .bottom-content.bg-6 {
-    background-image: url(../images/services/services-card-bg-6.jpg)
-}
-
-.single-services-box-wrap .bottom-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #30296c;
-    opacity: .9;
-    z-index: -1
-}
-
-.single-services-box-wrap .bottom-content h3 {
-    margin-bottom: 20px
-}
-
-.single-services-box-wrap .bottom-content h3 a {
-    color: #fff
-}
-
-.single-services-box-wrap .bottom-content p {
-    margin-bottom: 30px;
-    color: #fff
-}
-
-.single-services-box-wrap:hover .top-content {
-    top: -500px
-}
-
-.single-services-box-wrap:hover .bottom-content {
-    top: 0
-}
 
 .case-studies-area .owl-theme .owl-nav {
     margin-top: 0 !important
@@ -5453,3 +5351,119 @@ textarea.form-control {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio h2 {
+    color: var(--green-color);
+    font-weight: 800;
+}
+
+.portfolio .portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+    color: var(--orange-color);
+    font-weight: 900;
+}
+
+.portfolio .portfolio-filters li:first-child {
+    margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 575px) {
+    .portfolio .portfolio-filters li {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+.portfolio .portfolio-item {
+    position: relative;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: color-mix(in srgb, var(--green-color), transparent 2%);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.portfolio .portfolio-item .portfolio-info h3 {
+    color: var(--white-color);
+}
+
+.portfolio .portfolio-item .portfolio-info h6 {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.portfolio .portfolio-item .portfolio-info .ul {
+    color: var(--dark-color);
+    font-size: 17px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    color: color-mix(in srgb, var(--white-color), transparent 30%);
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 14px);
+    color: color-mix(in srgb, var(--white-color), transparent 30%);
+    transition: 0.3s;
+    line-height: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: var(--orange-color);
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+    right: 14px;
+    font-size: 28px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+    bottom: 20px;
+}

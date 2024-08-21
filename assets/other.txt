@@ -239,3 +239,200 @@
     display: block;
     color: var(--orange-color);
 }
+
+
+
+
+
+
+
+
+<!-- Start Services Area -->
+	<section class="services-area pt-100 pb-70">
+		<div class="container">
+			<div class="section-title" data-cues="slideInUp">
+				<span>What we do</span>
+				<h2>What services we offer</h2>
+			</div>
+
+			<div class="row" data-cues="slideInUp">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Chargers, Rectifiers &
+								DC Supplies:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<li>12VDC - 600VDC Systems</li>
+								<li>1Phase & 3Phase Systems</li>
+								<li>Industrial UPS</li>
+								<li>AC-DC System</li>
+								<li>DC-DC System</li>
+								<li>Constant Current Regulators</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Fire Alarm Systems:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<li>Addressable Systems</li>
+								<li>Conventional Systems</li>
+								<li>Smoke/Heat Detectors</li>
+								<li>Pull Stations</li>
+								<li>Bells & Sounders</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Fire Extinguishing Systems:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<li>FM 200</li>
+								<li>CO2</li>
+								<li>Vapor</li>
+								<li>Handheld Fire Extinguishers</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Security & Access Control Systems:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<li>CCTV, IP, PTZ Cameras</li>
+								<li>IR & Security Cameras</li>
+								<li>Access Control Systems</li>
+								<li>Perimeter Fencing Security</li>
+								<li>Road Blocks</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Control Systems:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<p class="text-start">Tailored to customer requirements for:</p>
+								<li>Generators, ATS & Control Panels</li>
+								<li>Data Center Air Conditioning/HVAC</li>
+								<li>Battery Paralleling Systems</li>
+								<li>Load Transfer Modules & Systems</li>
+								<li>UPS External Bypass Panels</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<div class="service-img">
+							<!-- <img src="assets/images/services/services-1.png" alt="Image"> -->
+						</div>
+						<div class="service-content">
+							<h4>
+								Remote Monitoring
+								Solutions:
+							</h4>
+							<!-- <h6 class="text-start mt-3 ">Applicable in the following areas:</h6> -->
+							<p>
+							<ul class="text-start">
+								<p>Customized designs for client requirements
+									to provide automated discovery, diagnosis &
+									resolution to technical problems.</p>
+								<h5>Typical applications include:</h5>
+								<li>Remote/Extreme Locations</li>
+								<li>Telecom Applications</li>
+								<li>Aviation Systems</li>
+							</ul>
+							</p>
+
+							<a href="services-details.html" class="default-btn">
+								Learn more
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="servers.html" class="default-btn">
+				View All
+			</a>
+			<hr>
+		</div>
+
+		<div class="shape shape-1">
+			<img src="assets/images/services/shape-1.png" alt="Image">
+		</div>
+		<div class="shape shape-2">
+			<img src="assets/images/services/shape-2.png" alt="Image">
+		</div>
+		<div class="shape shape-3">
+			<img src="assets/images/services/shape-3.png" alt="Image">
+		</div>
+	</section>
+	<!-- End Services Area -->
