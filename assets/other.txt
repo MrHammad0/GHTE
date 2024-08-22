@@ -436,3 +436,131 @@
 		</div>
 	</section>
 	<!-- End Services Area -->
+
+
+
+
+
+
+	
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <div class="col-lg-8">
+                    <img class="img-fluid w-100 rounded mb-5" src="img/electronic.jpg" alt="">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h1 class="mb-0">Electronics and Appliances</h1>
+                    </div>
+                    <p>
+                        Whether you're outfitting a small startup or a large enterprise, we have the products and
+                        expertise to support your
+                        business needs. From cutting-edge electronics to essential appliances, we offer a comprehensive
+                        selection to meet all
+                        your requirements under one roof.
+                    </p>
+                    <p>
+                        Our extensive catalog includes everything from computers, laptops, and printers to
+                        refrigerators, microwaves, and coffee
+                        makers. Whatever your industry or sector, we have the tools and equipment to help you succeed.
+                        Plus, with top brands and
+                        the latest technology, you can trust AHSR to provide products that deliver superior performance
+                        and reliability.
+                    </p>
+                    <div class="section-title position-relative pb-3 my-5">
+                        <h3 class="mb-0">For More Details Contact Us</h3>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <a href="https://wa.me/+966533668109" target="_blank"
+                            class=" btn btn-primary d-flex align-items-center justify-content-center rounded "
+                            style="width: 60px; height: 60px;">
+                            <img src="img/icons/phone.svg" class="icon trin-trin" alt="">
+                        </a>
+                        <div class="ps-4">
+                            <h5 class="mb-2 fw-bold ">Call to ask any question</h5>
+                            <h4 class="textDark mb-0 fw-bold ">+966 533668109</h4>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
+                        data-wow-delay="0.9s">Contact
+                        us</a>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <div class="section-title position-relative pb-3 mb-5">
+                            <h1 class="mb-0">Our Solutions</h1>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="renovationWorks.html"><span>Renovation Works</span><img src="img/icons/arrow.svg"
+                                    class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="stationaryItems.html"><span>Stationary items</span><img src="img/icons/arrow.svg"
+                                    class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="printingSolutions.html"><span>Printing Solutions</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="safetyEquipment.html"><span>Safety Equipment/PPE’s</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="toolsMachinery.html"><span>Tools & Machinery</span><img src="img/icons/arrow.svg"
+                                    class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="UniformsClothing.html"><span>Uniforms & Clothing</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="furnitureItems.html"><span>Furniture Items</span><img src="img/icons/arrow.svg"
+                                    class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="medicalEquipments.html"><span>Medical Equipments</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="manpowerServices.html"><span>Manpower Services</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="cleaningEquipments.html"><span>Cleaning Equipments</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="vehicleMaintenance.html"><span>Vehicle Maintenance</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="Edibles.html"><span>Edibles</span><img src="img/icons/arrow.svg" class="icon"
+                                    alt="" srcset=""></a>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bgDark text-white  rounded-4 scale1 py-3 px-4 d-flex justify-content-between mb-2"
+                                href="JanitorialServices.html"><span>Janitorial Services</span><img
+                                    src="img/icons/arrow.svg" class="icon" alt="" srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

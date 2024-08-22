@@ -22,7 +22,15 @@ body {
     font-weight: 600;
     transition: .5s;
     background-color: var(--green-color);
+    color: var(--white-color) !important;
 }
+
+.btn:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+
 
 .btn-outline-light:hover {
     background-color: var(--orange-color);
@@ -5466,4 +5474,19 @@ textarea.form-control {
 .portfolio .portfolio-item:hover .portfolio-info {
     opacity: 1;
     bottom: 20px;
+}
+
+
+.service-link {
+    background-color: var(--green-color);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.service-link a {
+    color: var(--white-color);
+}
+
+.service-link:hover {
+    scale: 1.1;
 }
