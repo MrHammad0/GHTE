@@ -1679,7 +1679,12 @@ textarea.form-control {
 
 .single-footer-widget .logo {
     margin-bottom: 20px;
-    display: inline-block
+    display: inline-block;
+}
+
+.single-footer-widget .logo img {
+    width: 250px;
+    height: 100px;
 }
 
 .single-footer-widget p {
@@ -1720,10 +1725,11 @@ textarea.form-control {
 }
 
 .single-footer-widget h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 25px;
     position: relative;
-    margin-top: -5px
+    margin-top: -5px;
+    color: var(--white-color);
 }
 
 .single-footer-widget .address {
@@ -2900,6 +2906,10 @@ textarea.form-control {
     top: 1px
 }
 
+
+
+/* contact section  */
+
 .main-contact-area .form-group {
     margin-bottom: 30px
 }
@@ -2911,7 +2921,8 @@ textarea.form-control {
 .main-contact-area .contact-form h2 {
     font-size: 40px;
     margin-bottom: 30px;
-    margin-top: -12px
+    margin-top: -12px;
+    color: var(--green-color);
 }
 
 .main-contact-area .contact-info {
@@ -2919,15 +2930,19 @@ textarea.form-control {
     margin-top: -5px
 }
 
+
 .main-contact-area .contact-info .top-title {
-    color: #f68820;
+    color: var(--orange-color);
     display: block;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .main-contact-area .contact-info h2 {
     font-size: 40px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    color: var(--green-color);
 }
 
 .main-contact-area .contact-info .address {
@@ -5489,40 +5504,4 @@ textarea.form-control {
 
 .service-link:hover {
     scale: 1.1;
-}
-
-
-.gallery {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotate 35s linear infinite;
-    margin: auto;
-}
-
-@keyframes rotate {
-    from {
-        transform: perspective(1200px) rotateY(0deg);
-    }
-
-    to {
-        transform: perspective(1200px) rotateY(360deg);
-    }
-}
-
-.gallery span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
-}
-
-.gallery span img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
