@@ -1046,6 +1046,7 @@ header.main-header .header-sticky.active {
 	font-size: 24px;
 }
 
+
 /************************************/
 /***     06. Our Services css	  ***/
 /************************************/
@@ -4671,4 +4672,48 @@ header.main-header .header-sticky.active {
 	.error-page-content-heading h2 {
 		font-size: 36px;
 	}
+}
+
+
+
+
+
+.Principal {
+	margin-bottom: 50px;
+}
+
+.Principal ul {
+	background-color: var(--accent-color);
+	border-radius: 20px;
+	padding: 30px;
+	margin: 0;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.Principal ul li {
+	position: relative;
+	font-size: 20px;
+	color: var(--primary-color);
+	font-weight: 500;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.Principal ul li:last-child {
+	margin-bottom: 0;
+}
+
+.Principal ul li:before {
+	content: '\f058';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 20px;
+	color: var(--primary-color);
+	display: inline-block;
+	line-height: normal;
+	position: absolute;
+	top: 4px;
+	left: 0;
 }
