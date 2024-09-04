@@ -1310,7 +1310,7 @@ header.main-header .header-sticky.active {
 
 .project-body {
 	position: absolute;
-	bottom: 10px;
+	bottom: 35px;
 	right: 40px;
 	left: 40px;
 	text-align: left;
@@ -1336,6 +1336,19 @@ header.main-header .header-sticky.active {
 	opacity: 0;
 	overflow: hidden;
 	transition: all 0.4s ease-in-out;
+}
+
+.project-content ul {
+	margin-bottom: 10px;
+}
+
+.project-content ul li {
+	color: var(--secondary-color);
+}
+
+.project-content ul li h5 {
+	color: var(--accent-color);
+	font-size: 20px;
 }
 
 .project-item:hover .project-content {
@@ -1938,6 +1951,10 @@ header.main-header .header-sticky.active {
 	padding: 220px 0 120px;
 	position: relative;
 	margin-top: -103px;
+}
+
+.TerminalBuildingComplex {
+	background: url('../images/p1bg.jpg') no-repeat center !important;
 }
 
 .page-header:before {
@@ -3106,8 +3123,12 @@ header.main-header .header-sticky.active {
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid var(--divider-color);
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding-bottom: 20px;
+}
+
+.project-info-item:last-child {
+	align-items: start;
 }
 
 .project-info-item:last-child {
