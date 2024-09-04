@@ -164,7 +164,8 @@
 /************************************/
 
 :root {
-	--primary-color: #12223B;
+	/* --primary-color: #12223B; */
+	--primary-color: #01AE47;
 	--secondary-color: #E9F7FE;
 	--text-color: #667282;
 	--accent-color: #FFB703;
