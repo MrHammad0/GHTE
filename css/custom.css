@@ -1,9 +1,3 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Builtup - Construction HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
 /* INDEX
 ----------------------------------------------------------------------------------------
 01. Global Variables
@@ -174,6 +168,7 @@
 	--dark-divider-color: #FFFFFF20;
 	--overlay-color: #00000066;
 	--error-color: rgb(230, 87, 87);
+	--overlycolor: #12223B;
 	--default-font: "DM Sans", sans-serif;
 	--accent-font: "Manrope", sans-serif;
 }
@@ -1799,7 +1794,7 @@ header.main-header .header-sticky.active {
 
 .contact-form .form-control::placeholder {
 	color: var(--primary-color);
-	opacity: 20%;
+	/* opacity: 20%; */
 	text-transform: capitalize;
 }
 
@@ -1809,7 +1804,7 @@ header.main-header .header-sticky.active {
 
 .main-footer {
 	background: var(--primary-color);
-	padding: 100px 0;
+	padding: 100px 0 30px 0;
 }
 
 .footer-logo {
@@ -1823,7 +1818,7 @@ header.main-header .header-sticky.active {
 
 .footer-links h3 {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 900;
 	color: var(--accent-color);
 	text-transform: capitalize;
 	margin-bottom: 40px;
@@ -1967,6 +1962,10 @@ header.main-header .header-sticky.active {
 	background: url('../images/p1bg.jpg') no-repeat center !important;
 }
 
+.aboutImg {
+	background: url('../images/about.jpg') no-repeat center center !important;
+}
+
 .page-header:before {
 	content: '';
 	display: block;
@@ -1975,7 +1974,9 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: var(--primary-color);
+	/* background: var(--primary-color); */
+	background-color: var(--overlycolor);
+
 	opacity: 60%;
 	border-radius: 40px;
 	z-index: 1;
@@ -3468,7 +3469,7 @@ header.main-header .header-sticky.active {
 /***     26. responsive css       ***/
 /************************************/
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
 	.navbar {
 		padding: 20px 0px;
@@ -3477,13 +3478,9 @@ header.main-header .header-sticky.active {
 	.main-menu ul li {
 		margin-left: 0;
 	}
-} */
+}
 
-/* @media only screen and (max-width: 991px) {
-
-	#magic-cursor {
-		display: none !important;
-	}
+@media only screen and (max-width: 1400px) {
 
 	.slicknav_nav li,
 	.slicknav_nav ul {
@@ -3495,751 +3492,14 @@ header.main-header .header-sticky.active {
 		display: block;
 	}
 
-	.light-bg-section {
-		margin: 0;
+	.main-menu ul li,
+	.main-menu .loginBtn a {
+		display: none;
 	}
 
-	.section-row {
-		margin-bottom: 40px;
-	}
-
-	.section-title {
-		margin-bottom: 30px;
-	}
-
-	.section-title h1 {
-		font-size: 60px;
-	}
-
-	.section-title h2 {
-		font-size: 46px;
-	}
-
-	.section-title h3 {
-		margin-bottom: 15px;
-	}
-
-	.section-row .section-title p {
-		max-width: 100%;
-	}
-
-	.section-title p {
-		margin-top: 15px;
-	}
-
-	.section-btn {
-		margin-top: 15px;
-	}
-
-	.btn-default {
-		font-size: 16px;
-		padding: 18px 55px 18px 25px;
-	}
-
-	.btn-default::before {
-		transform: translate(-25px, -50%);
-	}
-
-	.btn-default:hover:before {
-		transform: translate(-22px, -50%);
-	}
-
-	.btn-default.btn-highlighted {
-		padding: 17px 55px 17px 25px;
-	}
-
-	.btn-large {
-		font-size: 18px;
-		padding: 18px 55px 18px 20px;
-	}
-
-	header.main-header {
-		margin: 0px;
-	}
-
-	.navbar {
-		padding: 20px 0px;
-	}
-
-	.hero.bg-section {
-		margin: 0 0px;
-		margin-top: -103px;
-		padding: 200px 0 100px;
-		border-radius: 0;
-	}
-
-	.hero-slider-layout .hero-slide {
-		padding: 200px 0 100px;
-	}
-
-	.hero-slider-layout .swiper-pagination {
-		bottom: 50px;
-	}
-
-	.hero-content .section-title p {
-		font-size: 20px;
-	}
-
-	.about-us {
-		padding: 50px 0;
-	}
-
-	.about-image {
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.about-content {
-		margin-left: 0px;
-	}
-
-	.about-content-body ul {
-		padding: 20px;
-	}
-
-	.about-content-body ul li {
-		font-size: 18px;
-		margin-bottom: 10px;
-	}
-
-	.about-content-body ul li:before {
-		font-size: 18px;
-	}
-
-	.about-content-body {
-		margin-bottom: 30px;
-	}
-
-	.about-support-content p {
-		margin-bottom: 0px;
-	}
-
-	.about-support-content h3 {
-		font-size: 22px;
-	}
-
-	.our-service {
-		background-size: 50% auto;
-		padding: 50px 0;
-	}
-
-	.service-body {
-		right: 20px;
-		left: 20px;
-	}
-
-	.service-body-title h3 {
-		font-size: 22px;
-		margin-bottom: 15px;
-	}
-
-	.service-content p {
-		margin-bottom: 15px;
-	}
-
-	.why-choose-us {
-		padding: 50px 0 20px;
-	}
-
-	.why-choose-item {
-		padding: 30px 20px;
-	}
-
-	.why-choose-item .icon-box {
-		margin-bottom: 20px;
-	}
-
-	.why-choose-item .icon-box img {
-		max-width: 60px;
-	}
-
-	.why-choose-content {
-		margin-bottom: 20px;
-		padding-bottom: 20px;
-	}
-
-	.why-choose-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.why-choose-counter h3 {
-		font-size: 46px;
-	}
-
-	.our-projects {
-		background-size: 50% auto;
-		padding: 50px 0;
-	}
-
-	.project-body {
-		right: 20px;
-		left: 20px;
-	}
-
-	.project-body-title h3 {
-		font-size: 22px;
-		margin-bottom: 15px;
-	}
-
-	.project-content p {
-		margin-bottom: 15px;
-	}
-
-	.cta-box {
-		background-size: 80% auto;
-		padding: 50px 0;
-	}
-
-	.cta-box-image {
-		right: 0;
-	}
-
-	.cta-box-image img {
-		width: 300px;
-	}
-
-	.our-testimonial {
-		padding: 50px 0;
-	}
-
-	.testimonial-item {
-		padding: 20px;
-	}
-
-	.testimonial-rating {
-		margin-bottom: 20px;
-	}
-
-	.testimonial-rating i {
-		font-size: 18px;
-	}
-
-	.testimonial-header {
-		margin-bottom: 20px;
-		padding-bottom: 20px;
-	}
-
-	.author-content h3 {
-		font-size: 22px;
-	}
-
-	.our-faqs {
-		background-size: 50% auto;
-		padding: 50px 0;
-	}
-
-	.our-faqs-images {
-		width: 100%;
-		max-width: 565px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-	}
-
-	.faq-accordion {
-		margin-left: 0px;
-	}
-
-	.faq-accordion .accordion-item .accordion-button {
-		font-size: 22px;
-		padding: 10px 40px 10px 10px;
-	}
-
-	.faq-accordion .accordion-item {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-	}
-
-	.faq-accordion .accordion-item .accordion-button::after,
-	.faq-accordion .accordion-item .accordion-button.collapsed::after {
-		background-size: contain;
-		width: 26px;
-		height: 26px;
-	}
-
-	.our-blog {
-		padding: 50px 0 20px;
-	}
-
-	.post-item-content {
-		padding: 30px 20px;
-	}
-
-	.post-item-body h2 {
-		font-size: 22px;
-	}
-
-	.contact-us {
-		background-size: auto;
-		padding: 50px 0;
-	}
-
-	.contact-sidebar {
-		padding: 30px 20px 0;
-	}
-
-	.contact-info .icon-box {
-		margin-bottom: 15px;
-	}
-
-	.contact-info-content h3 {
-		font-size: 22px;
-	}
-
-	.contact-form {
-		padding: 30px;
-	}
-
-	.contact-form .form-control {
-		padding: 12px;
-	}
-
-	.main-footer {
-		padding: 50px 0;
-	}
-
-	.about-footer {
-		margin-bottom: 40px;
-	}
-
-	.footer-logo {
-		margin-bottom: 30px;
-	}
-
-	.footer-logo img {
-		max-width: 180px;
-	}
-
-	.footer-links h3 {
-		font-size: 22px;
-		margin-bottom: 30px;
-	}
-
-	.footer-contact-box .footer-info-box {
-		margin-bottom: 20px;
-	}
-
-	.footer-copyright {
-		margin-top: 60px;
-		padding: 15px 0;
-	}
-
-	.page-header {
-		margin: 0 0;
-		border-radius: 0;
-		padding: 170px 0 80px;
-		margin-top: -90px;
-	}
-
-	.page-header:before {
-		border-radius: 0px;
-	}
-
-	.page-header-box h1 {
-		font-size: 46px;
-		margin-bottom: 20px;
-	}
-
-	.page-header-box ol li.breadcrumb-item {
-		font-size: 20px;
-	}
-
-	.page-about-us {
-		padding: 50px 0;
-	}
-
-	.about-us-image {
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.about-us-content {
-		margin-left: 0px;
-	}
-
-	.about-us-content-body ul {
-		padding: 20px;
-	}
-
-	.about-us-content-body ul li {
-		font-size: 18px;
-		margin-bottom: 10px;
-	}
-
-	.about-us-content-body ul li:before {
-		font-size: 18px;
-	}
-
-	.about-us-content-body {
-		margin-bottom: 30px;
-	}
-
-	.about-us-support-content h3 {
-		font-size: 22px;
-	}
-
-	.our-company-history {
-		padding: 50px 0;
-	}
-
-	.company-history-image {
-		margin-bottom: 30px;
-	}
-
-	.company-history-img {
-		text-align: center;
-	}
-
-	.company-experience {
-		max-width: 175px;
-		padding: 30px;
-	}
-
-	.company-experience-content h3 {
-		font-size: 46px;
-	}
-
-	.our-mission-vision {
-		padding: 50px 0 20px;
-	}
-
-	.mission-vision-item .icon-box {
-		margin-bottom: 20px;
-	}
-
-	.mission-vision-item .icon-box img {
-		max-width: 60px;
-	}
-
-	.mission-vision-item .mission-vision-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.mission-vision-item {
-		height: calc(100% - 30px);
-		margin-bottom: 30px;
-	}
-
-	.intro-video-box .video-image img {
-		aspect-ratio: 1/0.55;
-	}
-
-	.video-play-button a {
-		width: 70px;
-		height: 70px;
-	}
-
-	.video-play-button a i {
-		font-size: 26px;
-	}
-
-	.what-we-do {
-		padding: 50px 0 20px;
-	}
-
-	.what-we-do .section-title {
-		max-width: 100%;
-	}
-
-	.company-counter-item {
-		height: calc(100% - 30px);
-		margin-bottom: 30px;
-		padding: 40px 20px;
-	}
-
-	.company-counter-item .company-counter-content h3 {
-		font-size: 46px;
-	}
-
-	.our-team {
-		padding: 50px 0 20px;
-	}
-
-	.team-content {
-		margin-bottom: 15px;
-	}
-
-	.team-content h3 {
-		font-size: 22px;
-		margin-bottom: 5px;
-	}
-
-	.page-service {
-		padding: 50px 0 20px;
-	}
-
-	.page-service-single {
-		padding: 50px 0;
-	}
-
-	.service-sidebar {
-		padding-right: 0;
-		margin-bottom: 30px;
-	}
-
-	.service-categories-list {
-		padding: 20px;
-	}
-
-	.service-categories-list h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.service-categories-list ul li {
-		margin-bottom: 15px;
-		padding: 0 0 15px 25px;
-	}
-
-	.sidebar-cta-box {
-		padding: 20px;
-	}
-
-	.sidebar-cta-box .cta-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.sidebar-cta-box .cta-content {
-		margin-bottom: 30px;
-	}
-
-	.service-single-content p {
-		margin-bottom: 20px;
-	}
-
-	.service-sustainable-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.service-benefit {
-		padding: 50px 0 20px;
-	}
-
-	.service-benefit .service-benefit-item {
-		padding: 20px;
-	}
-
-	.service-benefit-item .icon-box {
-		margin-bottom: 20px;
-	}
-
-	.service-benefit-item .icon-box img {
-		max-width: 60px;
-	}
-
-	.service-benefit-item .service-benefit-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.working-process {
-		padding: 50px 0 20px;
-	}
-
-	.working-process-item {
-		padding: 20px;
-	}
-
-	.working-process-item .step-number {
-		margin-bottom: 20px;
-	}
-
-	.working-process-item .step-number h2 {
-		font-size: 32px;
-	}
-
-	.working-process-item .working-process-content h3 {
-		font-size: 22px;
-		margin-bottom: 20px;
-	}
-
-	.page-blog {
-		padding: 50px 0;
-	}
-
-	.page-blog .blog-item {
-		height: calc(100% - 30px);
-		margin-bottom: 30px;
-	}
-
-	.post-pagination {
-		margin-top: 10px;
-	}
-
-	.post-single-meta ol li i {
-		font-size: 20px;
-	}
-
-	.page-single-post {
-		padding: 50px 0;
-	}
-
-	.post-image {
-		margin-bottom: 20px;
-	}
-
-	.post-entry blockquote {
-		background: var(--secondary-color) url("../images/icon-blockquote.svg") no-repeat 30px 36px;
-		background-size: 45px;
-		padding: 30px 30px 30px 90px;
-		margin-bottom: 20px;
-	}
-
-	.post-entry blockquote p {
-		font-size: 18px;
-	}
-
-	.post-entry h2 {
-		font-size: 36px;
-	}
-
-	.post-entry ul li {
-		font-size: 16px;
-	}
-
-	.post-tag-links {
-		padding: 0 0px;
-	}
-
-	.post-tags {
-		margin-bottom: 10px;
-	}
-
-	.post-social-sharing ul {
-		text-align: left;
-	}
-
-	.post-tags .tag-links a {
-		font-size: 16px;
-		padding: 8px 15px;
-	}
-
-	.page-project {
-		padding: 50px 0;
-	}
-
-	.page-project-single {
-		padding: 50px 0;
-	}
-
-	.project-single-content {
-		margin-right: 0px;
-		margin-bottom: 40px;
-	}
-
-	.project-details-content p {
-		margin-bottom: 20px;
-	}
-
-	.project-details-title {
-		margin-bottom: 20px;
-	}
-
-	.project-details-title h3 {
-		font-size: 22px;
-	}
-
-	.project-details-content {
-		margin-bottom: 30px;
-	}
-
-	.project-gallery-title h2 {
-		font-size: 22px;
-	}
-
-	.project-info-box {
-		padding: 20px;
-	}
-
-	.page-team {
-		padding: 50px 0 20px;
-	}
-
-	.contact-information {
-		padding: 50px 0 20px;
-	}
-
-	.contact-info-item {
-		padding: 20px;
-	}
-
-	.contact-info-item .icon-box {
-		margin-bottom: 20px;
-	}
-
-	.contact-info-item .icon-box img {
-		max-width: 40px;
-	}
-
-	.contact-info-body h3 {
-		font-size: 22px;
-		margin-bottom: 15px;
-	}
-
-	.google-map-iframe,
-	.google-map-iframe iframe {
-		height: 400px;
-	}
-
-	.page-faq {
-		padding: 50px 0;
-	}
-
-	.faq-sidebar {
-		margin-bottom: 30px;
-	}
-
-	.faq-category-box {
-		padding: 20px;
-	}
-
-	.faq-category-box ul li {
-		margin-bottom: 15px;
-		padding: 0 0 15px 35px;
-	}
-
-	.page-faq .faq-section {
-		margin-bottom: 40px;
-	}
-
-	.faq-section .faq-accordion .accordion-item {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-	}
-
-	.faq-section .faq-accordion .accordion-item .accordion-button {
-		font-size: 22px;
-		padding: 10px 40px 10px 10px;
-	}
-
-	.faq-section .faq-accordion .accordion-item .accordion-button::after,
-	.faq-section .faq-accordion .accordion-item .accordion-button.collapsed::after {
-		background-size: contain;
-		width: 26px;
-		height: 26px;
-	}
-
-	.error-page {
-		padding: 50px 0;
-	}
-
-	.error-page-image {
-		margin-bottom: 30px;
-	}
-
-	.error-page-content-heading {
-		margin-bottom: 20px;
-	}
-
-	.error-page-content-heading h2 {
-		font-size: 46px;
-	}
-} */
+}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 996px) {
 
 	#magic-cursor {
 		display: none !important;
@@ -4247,7 +3507,7 @@ header.main-header .header-sticky.active {
 
 	.slicknav_nav li,
 	.slicknav_nav ul {
-		display: block;
+		display: none;
 	}
 
 	.responsive-menu,
