@@ -39,16 +39,17 @@
 	margin: 0 auto 20px auto;
 	list-style: none;
 	text-align: center;
+	color: var(--text-color);
 }
 
 .portfolio .portfolio-filters li {
 	cursor: pointer;
 	display: inline-block;
 	padding: 0;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 600;
 	margin: 0 10px;
-	line-height: 1;
+	/* line-height: 1; */
 	text-transform: uppercase;
 	margin-bottom: 5px;
 	transition: all 0.3s ease-in-out;
