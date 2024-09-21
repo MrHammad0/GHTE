@@ -3517,7 +3517,7 @@ header.main-header .header-sticky.active {
 
 	.slicknav_nav li,
 	.slicknav_nav ul {
-		display: none;
+		display: block;
 	}
 
 	.responsive-menu,
