@@ -1963,6 +1963,10 @@ header.main-header .header-sticky.active {
 	background: url('../images/p1bg.jpg') no-repeat center !important;
 }
 
+.upsbanner {
+	background: url('../images/upsbanner.jpg') no-repeat center center !important;
+}
+
 .aboutImg {
 	background: url('../images/about.jpg') no-repeat center center !important;
 }
@@ -2665,7 +2669,7 @@ header.main-header .header-sticky.active {
 
 .service-benefit {
 	padding: 100px 0 70px;
-	background: url('../images/service-benefit-bg.jpg') no-repeat center center;
+	background: url('../images/upsbanner.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
 }
@@ -2678,8 +2682,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: var(--primary-color);
-	opacity: 70%;
+	background: var(--overlycolor);
+	opacity: 30%;
 	z-index: 0;
 }
 
