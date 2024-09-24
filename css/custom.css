@@ -1953,7 +1953,7 @@ header.main-header .header-sticky.active {
 	overflow: hidden;
 	border-radius: 40px;
 	background: url('../images/page-header-bg.jpg') no-repeat center center;
-	background-size: cover;
+	background-size: contain;
 	padding: 220px 0 120px;
 	position: relative;
 	margin-top: -103px;
@@ -1965,6 +1965,7 @@ header.main-header .header-sticky.active {
 
 .upsbanner {
 	background: url('../images/upsbanner.jpg') no-repeat center center !important;
+	background-size: cover !important;
 }
 
 .aboutImg {
@@ -2668,7 +2669,7 @@ header.main-header .header-sticky.active {
 }
 
 .service-benefit {
-	padding: 100px 0 70px;
+	padding: 150px 0 70px;
 	background: url('../images/upsbanner.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
@@ -2682,8 +2683,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: var(--overlycolor);
-	opacity: 30%;
+	background-color: var(--overlycolor);
+	opacity: 60%;
 	z-index: 0;
 }
 
