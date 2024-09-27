@@ -388,3 +388,51 @@
         </div>
     </div>
     <!-- Our Blog End -->
+
+
+
+
+
+
+
+
+
+
+
+
+    
+                <div class="col-lg-4 col-md-6">
+                    <!-- Project Item Start -->
+                    <div class="project-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Project Image Start -->
+                        <div class="project-image" data-cursor-text="View">
+                            <a href="#">
+                                <figure>
+                                    <img src="images/our-project-2.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Project Image End -->
+
+                        <!-- Project Body Start -->
+                        <div class="project-body">
+                            <!-- Project Body Title Start -->
+                            <div class="project-body-title">
+                                <h3>forest hill towers</h3>
+                            </div>
+                            <!-- Project Body Title End -->
+
+                            <!-- Project Content Start -->
+                            <div class="project-content">
+                                <p>Our post-construction services gives you peace of mind knowing that we are still here
+                                    for you even after.</p>
+                                <div class="project-content-footer">
+                                    <a href="#" class="readmore-btn">view more</a>
+                                </div>
+                            </div>
+                            <!-- Project Content End -->
+                        </div>
+                        <!-- Project Body End -->
+                    </div>
+                    <!-- Project Item End -->
+                </div>
