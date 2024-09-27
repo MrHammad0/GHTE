@@ -1968,6 +1968,76 @@ header.main-header .header-sticky.active {
 	background-size: cover !important;
 }
 
+.loadbankbanner {
+	background: url('../images/loadbankbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.batterybanner {
+	background: url('../images/batterybanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.genratorbanner {
+	background: url('../images/genratorbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.avrbanner {
+	background: url('../images/avrbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.cctvbanner {
+	background: url('../images/cctvbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.firebanner {
+	background: url('../images/firebanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.softwarebanner {
+	background: url('../images/softwarebanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.serverbanner {
+	background: url('../images/serverbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.rackbanner {
+	background: url('../images/rackbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.networkbanner {
+	background: url('../images/networkbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.databanner {
+	background: url('../images/databanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.soundbanner {
+	background: url('../images/soundbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.cyberbanner {
+	background: url('../images/cyberbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
+.acessbanner {
+	background: url('../images/accessbanner.png') no-repeat center center !important;
+	background-size: cover !important;
+}
+
 .aboutImg {
 	background: url('../images/about.jpg') no-repeat center center !important;
 }
@@ -1980,10 +2050,9 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/* background: var(--primary-color); */
-	background-color: var(--overlycolor);
-
-	opacity: 60%;
+	background: var(--primary-color);
+	background-color: black;
+	opacity: 40%;
 	border-radius: 40px;
 	z-index: 1;
 }
@@ -2675,6 +2744,111 @@ header.main-header .header-sticky.active {
 	position: relative;
 }
 
+.loadbankservice {
+	padding: 150px 0 70px;
+	background: url('../images/loadbankbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.batteryservice {
+	padding: 150px 0 70px;
+	background: url('../images/batterybanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.genratorservice {
+	padding: 150px 0 70px;
+	background: url('../images/genratorbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.avrservice {
+	padding: 150px 0 70px;
+	background: url('../images/avrbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.cctvservice {
+	padding: 150px 0 70px;
+	background: url('../images/cctvbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.accessservice {
+	padding: 150px 0 70px;
+	background: url('../images/accessbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.serverservice {
+	padding: 150px 0 70px;
+	background: url('../images/serverbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.softwareservice {
+	padding: 150px 0 70px;
+	background: url('../images/softwarebanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.fireservice {
+	padding: 150px 0 70px;
+	background: url('../images/firebanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.networkservice {
+	padding: 150px 0 70px;
+	background: url('../images/networkbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.rackservice {
+	padding: 150px 0 70px;
+	background: url('../images/rackbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.dataservice {
+	padding: 150px 0 70px;
+	background: url('../images/databanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.cyberservice {
+	padding: 150px 0 70px;
+	background: url('../images/cyberbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.soundservice {
+	padding: 150px 0 70px;
+	background: url('../images/soundbanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.batteryservice {
+	padding: 150px 0 70px;
+	background: url('../images/batterybanner.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
 .service-benefit::before {
 	content: '';
 	display: block;
@@ -2683,8 +2857,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--overlycolor);
-	opacity: 60%;
+	background-color: black;
+	opacity: 30%;
 	z-index: 0;
 }
 
