@@ -2692,7 +2692,7 @@ header.main-header .header-sticky.active {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	/* gap: 5px; */
 }
 
 .service-entry ul li {
