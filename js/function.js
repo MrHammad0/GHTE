@@ -7,7 +7,7 @@
 
 	/* Preloader Effect */
 	$window.on('load', function () {
-		$(".preloader").fadeOut(900);
+		$(".preloader").fadeOut(600);
 	});
 
 	/* Sticky Header */
